@@ -15,11 +15,11 @@ const sortedRobots = robots.map(robots, function (robot) {
     return Object.assign({}, robot, {
       alliance: 'decepticon'
     });
-} else {
-    return Object.assign({}, robot, {
-      alliance: 'autobot'
-    });
-}
+  } else {
+      return Object.assign({}, robot, {
+        alliance: 'autobot'
+      });
+  }
 });
 
 const zebraStripes = [
