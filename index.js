@@ -10,7 +10,7 @@ const robots = [
   { name: 'Ironhide', alliance: null },
   { name: 'Ratchet', alliance: null }
 ];
-const sortedRobots = robots.map(robots, function (robot) {
+const sortedRobots = robots.map(function (robot) {
   if (knownDecepticons.prototype.includes(robot.name)) {
     return Object.assign({}, robot, {
       alliance: 'decepticon'
