@@ -12,13 +12,12 @@ const robots = [
 ];
 const sortedRobots = robots.map((robot)=> {
     const autobot = !knownDecepticons.includes(robot.name);
-    return Object.assign({}, robot, {
+    return Object.assign({}, robot,
       if (autobot) {
         alliance: 'decepticon'
       } else {
         alliance: 'autobot'
-      }
-    });
+      });
 });
 
 const zebraStripes = [
