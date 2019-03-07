@@ -11,15 +11,9 @@ const robots = [
   { name: 'Ratchet', alliance: null }
 ];
 const sortedRobots = robots.map((robot)=> {
-  if (knownDecepticons.prototype.includes(robot.name)) {
     return Object.assign({}, robot, {
       alliance: 'decepticon'
     });
-  } else {
-      return Object.assign({}, robot, {
-        alliance: 'autobot'
-      });
-  }
 });
 
 const zebraStripes = [
