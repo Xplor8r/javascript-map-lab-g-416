@@ -21,17 +21,17 @@ const zebraStripes = [
   { width: 0.59, color: null },
   { width: 7.31, color: null }
 ];
-
-const sortedRobots = map(robots, function(robot) {
-  result = [];
-  if (knownDecepticons.includes(robot)) {
-    result.push(Object.assign({}, robot, {
-      alliance: 'decepticon'
-    }));
-  } else {
-    result.push(Object.assign({}, robot, {
-      alliance: 'autobot'
-    }));
-  }
-  return result;
-});
+const sortedRobots = [];
+// const sortedRobots = map(robots, function(robot) {
+//   result = [];
+//   if (knownDecepticons.includes(robot)) {
+//     result.push(Object.assign({}, robot, {
+//       alliance: 'decepticon'
+//     }));
+//   } else {
+//     result.push(Object.assign({}, robot, {
+//       alliance: 'autobot'
+//     }));
+//   }
+//   return result;
+// });
