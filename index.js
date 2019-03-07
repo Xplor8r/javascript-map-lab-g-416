@@ -27,7 +27,7 @@ const sortedRobots = robots.map((robot)=> {
     return Object.assign({}, robot, { alliance: autobot ? 'autobot' : 'decepticon' });
 });
 
-const coloredZebraStripes = zebraStripes.map((robot)=> {
-    const autobot = !knownDecepticons.includes(robot.name);
-    return Object.assign({}, robot, { alliance: autobot ? 'autobot' : 'decepticon' });
+const coloredZebraStripes = zebraStripes.map((stripe, index)=> {
+  const black = index % 2 === 0;
+  return Object.assign({}, stripe, { color: black ? 'black' : 'white' });
 });
