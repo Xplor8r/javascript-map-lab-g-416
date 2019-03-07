@@ -23,13 +23,15 @@ const zebraStripes = [
 ];
 
 const sortedRobots = map(robots, function(robot) {
+  result = [];
   if (knownDecepticons.includes(robot)) {
-    return Object.assign({}, robot, {
+    result.push(Object.assign({}, robot, {
       alliance: 'decepticon'
-    });
+    }));
   } else {
-    return Object.assign({}, robot, {
+    result.push(Object.assign({}, robot, {
       alliance: 'autobot'
-    });
+    }));
   }
+  return result;
 });
